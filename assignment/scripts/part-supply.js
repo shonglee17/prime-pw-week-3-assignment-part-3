@@ -10,7 +10,7 @@ console.log(' This is the number of parts need:', partsNeeded);
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
-let supplyChanges = ['3', '5', '-6', '0', '7', '11']
+let supplyChanges = ['3', '5', '-6', '0', '7', '25']
 
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
@@ -39,7 +39,7 @@ for ( i = 0; i<supplyChanges.length; i++){
     if ( supplyChanges[i] > 0){
     console.log('added ' + supplyChanges[i] +  ' parts');
     }//end if
-    else if (supplyChanges[i] === '0'){
+    else if (supplyChanges[i] == 0){
     console.log('No change');
     }//end else if
     else{
