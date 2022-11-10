@@ -56,7 +56,7 @@ for ( x of supplyChanges){
     if (x > 0){
         console.log('for of : added ' + x + ' parts');
     }//end if
-    else if ( x === '0'){
+    else if ( x === 0){
         console.log('for of : No change');
     }//end else if
     else {
@@ -81,6 +81,13 @@ console.log(a)
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
-let parts = 572;
-let box = 7;
-let leftOvers = 0;
+let p = 572;
+let b = 7;
+let t = 0;
+let f = 0;
+while ( p > b){
+    t = p - b;
+    f += + 1;
+    b += 7;
+}
+console.log(f +' boxes were filled and '+ t +  ' parts were left over');
