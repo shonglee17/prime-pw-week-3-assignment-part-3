@@ -10,7 +10,7 @@ console.log(' This is the number of parts need:', partsNeeded);
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
-let supplyChanges = ['3', '5', '-6', '0', '7', '25']
+let supplyChanges = [3, 5, -6, 0, 7, 25]
 
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
@@ -26,7 +26,7 @@ console.log('11 is removed:', supplyChanges)
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
-supplyChanges.push('25')
+supplyChanges.push(25)
 console.log('25 was added to the end of the array:', supplyChanges);
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
@@ -67,7 +67,12 @@ for ( x of supplyChanges){
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
-
+//['3', '5', '-6', '0', '7', '25']
+a = 0;
+for (let x = 0; x < supplyChanges.length; x++){ 
+        a = a + supplyChanges[x];
+}//end for
+console.log(a)
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
@@ -76,3 +81,6 @@ console.log('8. Total supplies available is:');
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+let parts = 572;
+let box = 7;
+let leftOvers = 0;
