@@ -90,4 +90,4 @@ while ( p > b){
     f += + 1;
     b += 7;
 }
-console.log(f +' boxes were filled and '+ t +  ' parts were left over');
+console.log(`${f} boxes were filled and ${t} parts were left over`);
